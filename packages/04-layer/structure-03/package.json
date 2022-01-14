@@ -1,0 +1,18 @@
+{
+  "name": "structure-03",
+  "version": "0.0.1",
+  "description": "structure-03",
+  "main": "index.js",
+  "author": "gatsby",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "structure-02": "*"
+  },
+  "dependencies": {
+    "structure-02": "*"
+  },
+  "devDependencies": {
+    "structure-02": "*"
+  }
+}

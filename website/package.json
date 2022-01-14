@@ -1,0 +1,16 @@
+
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "Demo website",
+  "main": "gatsby-config.js",
+  "author": "iMotor",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "structure-04": "*",
+    "gatsby": "^4.5.2",
+    "gatsby-plugin-image": "^2.5.1"
+  }
+}
+

@@ -1,3 +1,5 @@
+console.log(`${__dirname}/content/blog`)
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog`,

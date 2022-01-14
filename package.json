@@ -1,37 +1,20 @@
 {
   "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A monorepo starter for a blog powered by Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "dependencies": {
-    "gatsby": "^4.5.2",
-    "gatsby-plugin-feed": "^4.5.0",
-    "gatsby-plugin-gatsby-cloud": "^4.5.1",
-    "gatsby-plugin-google-analytics": "^4.5.0",
-    "gatsby-plugin-image": "^2.5.1",
-    "gatsby-plugin-manifest": "^4.5.1",
-    "gatsby-plugin-offline": "^5.5.1",
-    "gatsby-plugin-react-helmet": "^5.5.0",
-    "gatsby-plugin-sharp": "^4.5.1",
-    "gatsby-remark-copy-linked-files": "^5.5.0",
-    "gatsby-remark-images": "^6.5.1",
-    "gatsby-remark-prismjs": "^6.5.0",
-    "gatsby-remark-responsive-iframe": "^5.5.0",
-    "gatsby-remark-smartypants": "^5.5.0",
-    "gatsby-source-filesystem": "^4.5.1",
-    "gatsby-transformer-remark": "^5.5.1",
-    "gatsby-transformer-sharp": "^4.5.0",
-    "prismjs": "^1.25.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
-  },
+  "workspaces": [
+    "packages/01-layer/*",
+    "packages/02-layer/*",
+    "packages/03-layer/*",
+    "packages/04-layer/*",
+    "packages/05-layer/*",
+    "website"
+  ],
   "devDependencies": {
     "prettier": "^2.5.1"
   },
@@ -46,12 +29,12 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "yarn workspace website gatsby build",
+    "develop": "yarn workspace website gatsby develop",
+    "prod": "yarn build && yarn serve",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "serve": "yarn workspace website gatsby serve",
+    "clean": "yarn workspace website gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
