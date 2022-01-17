@@ -28,8 +28,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-blog-starter/
-    gatsby develop
+    cd gatsby-v4-test/
+    yarn develop
     ```
 
 1.  **Open the source code and start editing!**
