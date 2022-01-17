@@ -21,18 +21,31 @@ const Layout = ({ location, title, children }) => {
   /**
    * Dependencies used in project
    */
+  // eslint-disable-next-line no-unused-vars
   const a = rc
+  // eslint-disable-next-line no-unused-vars
   const b = PropTypes
+  // eslint-disable-next-line no-unused-vars
   const c = loadable
+  // eslint-disable-next-line no-unused-vars
   const d = rehypeRaw
+  // eslint-disable-next-line no-unused-vars
   const e = rehypeSanitize
+  // eslint-disable-next-line no-unused-vars
   const f = loadStripe
+  // eslint-disable-next-line no-unused-vars
   const g = queryString
+  // eslint-disable-next-line no-unused-vars
   const h = Doughnut
+  // eslint-disable-next-line no-unused-vars
   const i = useInView
+  // eslint-disable-next-line no-unused-vars
   const j = ReactMapGL
+  // eslint-disable-next-line no-unused-vars
   const k = Marker
+  // eslint-disable-next-line no-unused-vars
   const l = NavigationControl
+  // eslint-disable-next-line no-unused-vars
   const m = Slider
   
   const rootPath = `${__PATH_PREFIX__}/`
