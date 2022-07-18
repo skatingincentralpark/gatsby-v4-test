@@ -72,5 +72,4 @@ yarn-error.log
 original-content/
 
 # Scripts generating random amount of pages and templates
-util/**
-util/**/*
+util
