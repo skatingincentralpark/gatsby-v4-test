@@ -1,7 +1,13 @@
+const top = require('process-top')()
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
+  setInterval(() => {
+    // Prints out a string containing stats about your Node.js process.
+    console.log(top.toString())
+  }, 1000)
+
   const { createPage } = actions
 
   // Define a template for blog post
