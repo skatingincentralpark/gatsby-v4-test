@@ -30,7 +30,7 @@
   },
   "scripts": {
     "build": "yarn workspace website gatsby build",
-    "develop": "yarn workspace website gatsby develop",
+    "dev": "yarn workspace website gatsby develop",
     "prod": "yarn build && yarn serve",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "yarn workspace website gatsby serve",
