@@ -6060,6 +6060,14 @@ event-emitter@^0.3.5:
     d "1"
     es5-ext "~0.10.14"
 
+event-loop-delay@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/event-loop-delay/-/event-loop-delay-1.0.1.tgz#c0e7e30a37e3ce77b1a179a23bee72cf34bcec9f"
+  integrity sha512-O7nq//Wqk2gY8IWqrQHJtlzT/Hbsn0alxX09J0RZ5Bljsfvd+xRtGGnurh+BFatzkNkGi5Ddd/vsA0v2K79g0A==
+  dependencies:
+    napi-macros "^2.0.0"
+    node-gyp-build "^4.2.0"
+
 event-source-polyfill@1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/event-source-polyfill/-/event-source-polyfill-1.0.25.tgz#d8bb7f99cb6f8119c2baf086d9f6ee0514b6d9c8"
@@ -9504,6 +9512,11 @@ napi-build-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/napi-build-utils/-/napi-build-utils-1.0.2.tgz#b1fddc0b2c46e380a0b7a76f984dd47c41a13806"
   integrity sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==
 
+napi-macros@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/napi-macros/-/napi-macros-2.1.0.tgz#d0a8bd90b65be19dd37e425386a005c694f7039d"
+  integrity sha512-wJugWHfxRnVhV26BpJl2vyLHOXPrNBUyYJA5CTYcgbRcqHXAEJqStqpKOfBJyd0eb1VMbjdNvoeBWucpbdDrTw==
+
 native-url@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/native-url/-/native-url-0.2.6.tgz#ca1258f5ace169c716ff44eccbddb674e10399ae"
@@ -9619,7 +9632,7 @@ node-gyp-build-optional-packages@^4.3.2:
   resolved "https://registry.yarnpkg.com/node-gyp-build-optional-packages/-/node-gyp-build-optional-packages-4.3.5.tgz#a1de0039f81ecacecefcbb4349cdb96842343b31"
   integrity sha512-5ke7D8SiQsTQL7CkHpfR1tLwfqtKc0KYEmlnkwd40jHCASskZeS98qoZ1qDUns2aUQWikcjidRUs6PM/3iyN/w==
 
-node-gyp-build@^4.3.0:
+node-gyp-build@^4.2.0, node-gyp-build@^4.3.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.5.0.tgz#7a64eefa0b21112f89f58379da128ac177f20e40"
   integrity sha512-2iGbaQBV+ITgCz76ZEjmhUKAKVf7xfY1sRl4UiKQspfZMH2h06SyhNsnSVy50cwkFQDGLyif6m/6uFXHkOZ6rg==
@@ -10569,6 +10582,11 @@ prepend-http@^2.0.0:
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
+prettier-bytes@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/prettier-bytes/-/prettier-bytes-1.0.4.tgz#994b02aa46f699c50b6257b5faaa7fe2557e62d6"
+  integrity sha512-dLbWOa4xBn+qeWeIF60qRoB6Pk2jX5P3DIVgOQyMyvBpu931Q+8dXz8X0snJiFkQdohDDLnZQECjzsAj75hgZQ==
+
 prettier@^2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
@@ -10605,6 +10623,14 @@ process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+
+process-top@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/process-top/-/process-top-1.2.0.tgz#0443a7b2c61b0aae1207fa5562cb23252df986b6"
+  integrity sha512-R0WlpJe+os9deHxqua2S62gp7/IuWNG4T7buG0/VKwFg9/Zk5eicaI1IlwkBL3s+NXHBqdaKw/HgeG+kGL4bLw==
+  dependencies:
+    event-loop-delay "^1.0.0"
+    prettier-bytes "^1.0.4"
 
 process@^0.11.10:
   version "0.11.10"
